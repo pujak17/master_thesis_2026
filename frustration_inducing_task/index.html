@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Task</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- Fake error modal -->
+<div id="fakeErrorModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#fff; padding:30px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.3); z-index:1000; text-align:center;">
+    <p style="color:#d32f2f; font-weight:bold;">⚠️ Connection Error</p>
+    <p id="errorText">Unable to connect to server. Please retry.</p>
+    <button id="fakeRetryBtn" style="background:#0078d7; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; margin-top:15px;">Retry</button>
+</div>
+
+<!-- Confirmation modal -->
+<div id="confirmationModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%,-50%); background:#fff; padding:30px; border-radius:8px; box-shadow:0 10px 30px rgba(0,0,0,0.3); z-index:1000; text-align:center;">
+    <p id="confirmationText">Are you sure you want to continue?</p>
+    <div style="margin-top:20px;">
+        <button id="confirmYes" style="background:#0078d7; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer; margin-right:10px;">Yes</button>
+        <button id="confirmNo" style="background:#666; color:white; border:none; padding:10px 20px; border-radius:6px; cursor:pointer;">No</button>
+    </div>
+</div>
+
+<div class="container">
+    <h1>Task</h1>
+    <div class="progress-container">
+        <div id="progress" class="progress-bar"></div>
+    </div>
+
+    <div id="content"></div>
+    <button type="button" id="resetBtn" class="reset-btn">Reset</button>
+    <div id="feedback"></div>
+
+</div>
+
+<!-- IMPORTANT: tasks.js first -->
+<script src="tasks.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

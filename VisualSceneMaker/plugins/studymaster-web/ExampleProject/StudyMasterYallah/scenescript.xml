@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SceneScript lower="0" upper="0">
+  <SceneObject lower="0" upper="63" language="@@" identifier="InformReaction">
+    <SceneTurn lower="24" upper="63" speaker="web">
+      <SceneUttr lower="30" upper="63" punct=".">
+        <ActionObject lower="30" upper="36" actor="" name="INFORM">
+          <ActionFeature lower="37" upper="61" key="value" val="'Reaction ongoing'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="65" upper="152" language="@@" identifier="InformDefault">
+    <SceneTurn lower="88" upper="152" speaker="web">
+      <SceneUttr lower="94" upper="152" punct=".">
+        <ActionObject lower="94" upper="100" actor="" name="INFORM">
+          <ActionFeature lower="101" upper="150" key="value" val="'Dafault behavior active. Select Reaction:'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="154" upper="313" language="@@" identifier="SelectReaction">
+    <SceneTurn lower="178" upper="313" speaker="web">
+      <SceneUttr lower="184" upper="313" punct=".">
+        <ActionObject lower="184" upper="191" actor="" name="REQUEST">
+          <ActionFeature lower="192" upper="206" key="var" val="'reaction'"/>
+          <ActionFeature lower="207" upper="298" key="value" val="'one,two,lipdimples,fidgeting,browslowered,realsmile,leaningforward,OuterBrowsRaised'"/>
+          <ActionFeature lower="299" upper="311" key="type" val="'radio'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="315" upper="389" language="@@" identifier="Greetings">
+    <SceneTurn lower="334" upper="389" speaker="Anna">
+      <SceneUttr lower="340" upper="346" punct=",">
+        <SceneWord lower="340" upper="345" text="Hello"/>
+      </SceneUttr>
+      <SceneUttr lower="348" upper="389" punct=".">
+        <ActionObject lower="348" upper="365" actor="" name="PlayAnimationClip">
+          <ActionFeature lower="366" upper="377" key="name" val="Waving"/>
+        </ActionObject>
+        <SceneWord lower="379" upper="380" text="I"/>
+        <SceneWord lower="381" upper="383" text="am"/>
+        <SceneWord lower="384" upper="388" text="Anna"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="391" upper="444" language="@@" identifier="DefaultV1">
+    <SceneTurn lower="410" upper="444" speaker="Anna">
+      <SceneUttr lower="417" upper="444" punct=".">
+        <ActionObject lower="417" upper="429" actor="" name="LookAtObject">
+          <ActionFeature lower="430" upper="442" key="name" val="Monitor"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="446" upper="500" language="@@" identifier="DefaultV2">
+    <SceneTurn lower="465" upper="500" speaker="Anna">
+      <SceneUttr lower="472" upper="500" punct=".">
+        <ActionObject lower="472" upper="484" actor="" name="LookAtObject">
+          <ActionFeature lower="485" upper="498" key="name" val="Monitor2"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="502" upper="555" language="@@" identifier="Default_Void">
+    <SceneTurn lower="524" upper="555" speaker="Anna">
+      <SceneUttr lower="531" upper="555" punct=".">
+        <ActionObject lower="531" upper="543" actor="" name="LookAtObject">
+          <ActionFeature lower="544" upper="553" key="name" val="Void"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="557" upper="633" language="@@" identifier="DefaultF1">
+    <SceneTurn lower="576" upper="633" speaker="Anna">
+      <SceneUttr lower="583" upper="633" punct=".">
+        <ActionObject lower="583" upper="609" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="610" upper="631" key="name" val="fe_deglutition01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="635" upper="708" language="@@" identifier="DefaultF2">
+    <SceneTurn lower="654" upper="708" speaker="Anna">
+      <SceneUttr lower="661" upper="708" punct=".">
+        <ActionObject lower="661" upper="687" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="688" upper="706" key="name" val="fe_confused01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="710" upper="781" language="@@" identifier="DefaultF3">
+    <SceneTurn lower="729" upper="781" speaker="Anna">
+      <SceneUttr lower="736" upper="781" punct=".">
+        <ActionObject lower="736" upper="762" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="763" upper="779" key="name" val="fe_serene01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="783" upper="846" language="@@" identifier="ReactionLookAtCamera">
+    <SceneTurn lower="813" upper="846" speaker="Anna">
+      <SceneUttr lower="820" upper="846" punct=".">
+        <ActionObject lower="820" upper="832" actor="" name="LookAtObject">
+          <ActionFeature lower="833" upper="844" key="name" val="Camera"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="848" upper="976" language="@@" identifier="Reaction1">
+    <SceneTurn lower="867" upper="976" speaker="Anna">
+      <SceneUttr lower="874" upper="955" punct=".">
+        <ActionObject lower="874" upper="886" actor="" name="LookAtObject">
+          <ActionFeature lower="887" upper="898" key="name" val="Camera"/>
+        </ActionObject>
+        <ActionObject lower="901" upper="927" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="928" upper="942" key="name" val="fe_evil02"/>
+        </ActionObject>
+        <SceneWord lower="944" upper="952" text="reaction"/>
+        <SceneWord lower="953" upper="954" text="1"/>
+      </SceneUttr>
+      <SceneUttr lower="956" upper="976" punct=".">
+        <SceneWord lower="956" upper="960" text="evil"/>
+        <SceneWord lower="961" upper="965" text="face"/>
+        <SceneWord lower="966" upper="968" text="at"/>
+        <SceneWord lower="969" upper="975" text="camera"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="978" upper="1047" language="@@" identifier="Reaction2a">
+    <SceneTurn lower="998" upper="1047" speaker="Anna">
+      <SceneUttr lower="1005" upper="1047" punct=".">
+        <ActionObject lower="1005" upper="1017" actor="" name="LookAtObject">
+          <ActionFeature lower="1018" upper="1029" key="name" val="Camera"/>
+        </ActionObject>
+        <SceneWord lower="1031" upper="1035" text="this"/>
+        <SceneWord lower="1036" upper="1041" text="seems"/>
+        <SceneWord lower="1042" upper="1046" text="hard"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1049" upper="1147" language="@@" identifier="Reaction2b">
+    <SceneTurn lower="1069" upper="1147" speaker="Anna">
+      <SceneUttr lower="1076" upper="1147" punct=".">
+        <ActionObject lower="1076" upper="1088" actor="" name="LookAtObject">
+          <ActionFeature lower="1089" upper="1100" key="name" val="Camera"/>
+        </ActionObject>
+        <ActionObject lower="1103" upper="1129" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1130" upper="1145" key="name" val="fe_bored01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1149" upper="1257" language="@@" identifier="ReactionLipDimplesA">
+    <SceneTurn lower="1178" upper="1257" speaker="Anna">
+      <SceneUttr lower="1185" upper="1257" punct=".">
+        <ActionObject lower="1185" upper="1211" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1212" upper="1227" key="name" val="fe_bored01"/>
+        </ActionObject>
+        <ActionObject lower="1230" upper="1242" actor="" name="LookAtObject">
+          <ActionFeature lower="1243" upper="1255" key="name" val="Monitor"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1259" upper="1326" language="@@" identifier="ReactionLipDimplesB">
+    <SceneTurn lower="1288" upper="1326" speaker="Anna">
+      <SceneUttr lower="1295" upper="1326" punct=".">
+        <ActionObject lower="1295" upper="1307" actor="" name="LookAtObject">
+          <ActionFeature lower="1308" upper="1320" key="name" val="Monitor"/>
+        </ActionObject>
+        <SceneWord lower="1322" upper="1325" text="pfu"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1328" upper="1425" language="@@" identifier="ReactionFidgeting">
+    <SceneTurn lower="1355" upper="1425" speaker="Anna">
+      <SceneUttr lower="1362" upper="1425" punct=".">
+        <ActionObject lower="1362" upper="1374" actor="" name="LookAtObject">
+          <ActionFeature lower="1375" upper="1386" key="name" val="Camera"/>
+        </ActionObject>
+        <SceneWord lower="1388" upper="1391" text="The"/>
+        <SceneWord lower="1392" upper="1396" text="task"/>
+        <SceneWord lower="1397" upper="1402" text="seems"/>
+        <SceneWord lower="1403" upper="1405" text="to"/>
+        <SceneWord lower="1406" upper="1408" text="be"/>
+        <SceneWord lower="1409" upper="1414" text="quite"/>
+        <SceneWord lower="1415" upper="1424" text="difficult"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1427" upper="1538" language="@@" identifier="ReactionLeaningForward">
+    <SceneTurn lower="1459" upper="1538" speaker="Anna">
+      <SceneUttr lower="1466" upper="1530" punct=",">
+        <ActionObject lower="1466" upper="1478" actor="" name="LookAtObject">
+          <ActionFeature lower="1479" upper="1490" key="name" val="Camera"/>
+        </ActionObject>
+        <SceneWord lower="1492" upper="1496" text="Does"/>
+        <SceneWord lower="1497" upper="1500" text="not"/>
+        <SceneWord lower="1501" upper="1505" text="look"/>
+        <SceneWord lower="1506" upper="1510" text="like"/>
+        <SceneWord lower="1511" upper="1514" text="you"/>
+        <SceneWord lower="1515" upper="1518" text="are"/>
+        <SceneWord lower="1519" upper="1525" text="having"/>
+        <SceneWord lower="1526" upper="1529" text="fun"/>
+      </SceneUttr>
+      <SceneUttr lower="1531" upper="1538" punct=".">
+        <SceneWord lower="1531" upper="1533" text="to"/>
+        <SceneWord lower="1534" upper="1537" text="bad"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1540" upper="1649" language="@@" identifier="ReactionBrowsLowered">
+    <SceneTurn lower="1570" upper="1649" speaker="Anna">
+      <SceneUttr lower="1577" upper="1649" punct=".">
+        <ActionObject lower="1577" upper="1589" actor="" name="LookAtObject">
+          <ActionFeature lower="1590" upper="1599" key="name" val="Void"/>
+        </ActionObject>
+        <ActionObject lower="1602" upper="1628" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1629" upper="1647" key="name" val="fe_confused02"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1651" upper="1762" language="@@" identifier="ReactionOuterBrowsRaised1">
+    <SceneTurn lower="1686" upper="1762" speaker="Anna">
+      <SceneUttr lower="1693" upper="1762" punct=".">
+        <ActionObject lower="1693" upper="1705" actor="" name="LookAtObject">
+          <ActionFeature lower="1706" upper="1717" key="name" val="Camera"/>
+        </ActionObject>
+        <ActionObject lower="1720" upper="1746" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1747" upper="1760" key="name" val="fe_sad02"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1764" upper="1878" language="@@" identifier="ReactionOuterBrowsRaised2">
+    <SceneTurn lower="1799" upper="1878" speaker="Anna">
+      <SceneUttr lower="1806" upper="1878" punct=".">
+        <ActionObject lower="1806" upper="1818" actor="" name="LookAtObject">
+          <ActionFeature lower="1819" upper="1830" key="name" val="Camera"/>
+        </ActionObject>
+        <ActionObject lower="1833" upper="1859" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1860" upper="1876" key="name" val="fe_serene01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1880" upper="1958" language="@@" identifier="ReactionRealSmile">
+    <SceneTurn lower="1907" upper="1958" speaker="Anna">
+      <SceneUttr lower="1914" upper="1958" punct=".">
+        <ActionObject lower="1914" upper="1940" actor="" name="SetCurrentFacialExpression">
+          <ActionFeature lower="1941" upper="1956" key="name" val="fe_happy01"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+</SceneScript>

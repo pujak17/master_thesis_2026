@@ -1,0 +1,14 @@
+src/de/dfki/vsm/sfsl/parser/
+tmp/
+/prj/version.ini
+/log/vsm3.log
+/log/stickman.log
+.idea/*
+.gradle
+# Ignoring all build directories
+build/
+!plugins/studymaster-web/src/main/resources/react-studymaster/build
+
+#
+# MacOS stuff
+.DS_Store

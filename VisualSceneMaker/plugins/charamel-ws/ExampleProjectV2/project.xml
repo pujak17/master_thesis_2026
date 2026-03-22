@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="Mika_V2">
+  <Plugins>
+    <Plugin type="device" name="CharamelWS" class="de.dfki.vsm.xtension.charamelWs.charamelWsExecutor" load="true">
+      <Feature key="sceneflowVar" val="avatar_connected"/>
+      <Feature key="ws_port" val="3030"/>
+      <Feature key="characterSpeaking" val="avatar_speaking"/>
+      <Feature key="wss_port" val="3031"/>
+    </Plugin>
+    <Plugin type="device" name="webpage" class="de.dfki.vsm.xtension.responsiveweb.HtmlGuiWsExecutor" load="true">
+      <Feature key="wss_port" val="4040"/>
+      <Feature key="ws_port" val="4041"/>
+      <Feature key="html_port" val="8080"/>
+      <Feature key="sceneflowStateVar" val="gui_connected"/>
+      <Feature key="sceneflowInfoVar" val="gui_info"/>
+      <Feature key="guifiles" val="gui"/>
+      <Feature key="audiofiles" val="audio"/>
+    </Plugin>
+    <Plugin type="device" name="studyMaster" class="de.dfki.vsm.xtension.studymasterWeb.WebStudyMasterExecutor" load="true">
+      <Feature key="port" val="8081"/>
+      <Feature key="studymaster_connected_var" val="studymaster_connected"/>
+      <Feature key="studymaster_info_var" val="studymaster_info"/>
+    </Plugin>
+    <Plugin type="device" name="pythonState" class="de.dfki.vsm.xtension.PythonState.PythonStateExecutor" load="true">
+      <Feature key="pythonBin" val="/Users/puja/miniconda3/envs/yolo/bin/python"/>
+      <Feature key="scriptPath" val="/Users/puja/IdeaProjects/charamelFaceDetection/training/yolo/inference_cls_v2.py"/>
+      <Feature key="pythonMode" val="launch"/>
+      <Feature key="python_connected_var" val="python_connected"/>
+      <Feature key="sceneflowStateVar" val="python_state"/>
+      <Feature key="keepAlive" val="true"/>
+    </Plugin>
+  </Plugins>
+  <Agents>
+    <Agent name="gui" device="webpage">
+      <Feature key="default" val="./default_gui.html"/>
+      <Feature key="black" val="./black.html"/>
+    </Agent>
+    <Agent name="Mika" device="CharamelWS">
+      <Feature key="voice" val="en-US-AvaNeural"/>
+    </Agent>
+    <Agent name="web" device="studyMaster">
+    </Agent>
+    <Agent name="state" device="pythonState">
+    </Agent>
+  </Agents>
+  <Player>
+  </Player>
+</Project>

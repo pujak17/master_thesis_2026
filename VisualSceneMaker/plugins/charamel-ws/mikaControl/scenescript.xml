@@ -1,0 +1,587 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SceneScript lower="0" upper="0">
+  <SceneObject lower="0" upper="46" language="@@" identifier="walkin">
+    <SceneTurn lower="16" upper="46" speaker="Mika">
+      <SceneUttr lower="23" upper="46" punct=".">
+        <ActionObject lower="23" upper="29" actor="" name="comein">
+          <ActionFeature lower="30" upper="44" key="direction" val="LEFT"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="48" upper="282" language="en" identifier="welcome">
+    <SceneTurn lower="65" upper="282" speaker="Mika">
+      <SceneUttr lower="71" upper="79" punct="!">
+        <SceneWord lower="71" upper="78" text="Welcome"/>
+      </SceneUttr>
+      <SceneUttr lower="80" upper="116" punct=".">
+        <SceneWord lower="80" upper="84" text="Nice"/>
+        <ActionObject lower="86" upper="92" actor="" name="greet1">
+        </ActionObject>
+        <SceneWord lower="94" upper="96" text="to"/>
+        <SceneWord lower="97" upper="101" text="meet"/>
+        <ActionObject lower="103" upper="110" actor="" name="explain">
+        </ActionObject>
+        <SceneWord lower="112" upper="115" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="117" upper="179" punct=".">
+        <SceneWord lower="117" upper="119" text="My"/>
+        <SceneWord lower="120" upper="124" text="name"/>
+        <SceneWord lower="125" upper="127" text="is"/>
+        <SceneWord lower="128" upper="132" text="Mika"/>
+        <SceneWord lower="133" upper="136" text="and"/>
+        <SceneWord lower="137" upper="138" text="I"/>
+        <SceneWord lower="139" upper="143" text="will"/>
+        <SceneWord lower="144" upper="146" text="be"/>
+        <SceneWord lower="147" upper="151" text="your"/>
+        <SceneWord lower="152" upper="159" text="virtual"/>
+        <SceneWord lower="160" upper="168" text="collegue"/>
+        <SceneWord lower="169" upper="172" text="for"/>
+        <SceneWord lower="173" upper="178" text="today"/>
+      </SceneUttr>
+      <SceneUttr lower="180" upper="205" punct=",">
+        <SceneWord lower="180" upper="181" text="I"/>
+        <SceneWord lower="182" upper="184" text="am"/>
+        <SceneWord lower="185" upper="189" text="here"/>
+        <SceneWord lower="190" upper="192" text="to"/>
+        <SceneWord lower="193" upper="200" text="support"/>
+        <SceneWord lower="201" upper="204" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="206" upper="223" punct=",">
+        <SceneWord lower="206" upper="210" text="keep"/>
+        <SceneWord lower="211" upper="214" text="you"/>
+        <SceneWord lower="215" upper="222" text="company"/>
+      </SceneUttr>
+      <SceneUttr lower="224" upper="282" punct=".">
+        <SceneWord lower="224" upper="227" text="and"/>
+        <SceneWord lower="228" upper="232" text="help"/>
+        <SceneWord lower="233" upper="239" text="things"/>
+        <SceneWord lower="240" upper="244" text="feel"/>
+        <SceneWord lower="245" upper="246" text="a"/>
+        <SceneWord lower="247" upper="250" text="bit"/>
+        <SceneWord lower="251" upper="258" text="lighter"/>
+        <SceneWord lower="259" upper="264" text="while"/>
+        <SceneWord lower="265" upper="268" text="you"/>
+        <ActionObject lower="270" upper="275" actor="" name="smile">
+        </ActionObject>
+        <SceneWord lower="277" upper="281" text="work"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="284" upper="419" language="@@" identifier="RequestReaction">
+    <SceneTurn lower="309" upper="419" speaker="web">
+      <SceneUttr lower="315" upper="419" punct=".">
+        <ActionObject lower="315" upper="322" actor="" name="REQUEST">
+          <ActionFeature lower="323" upper="337" key="var" val="'reaction'"/>
+          <ActionFeature lower="338" upper="404" key="value" val="'encourage,smile,look,fidgeting,help,surprised,cheer,breath'"/>
+          <ActionFeature lower="405" upper="417" key="type" val="'radio'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="421" upper="484" language="@@" identifier="InformFill">
+    <SceneTurn lower="441" upper="484" speaker="web">
+      <SceneUttr lower="447" upper="484" punct=".">
+        <ActionObject lower="447" upper="453" actor="" name="INFORM">
+          <ActionFeature lower="454" upper="482" key="value" val="'Please fill the form'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="486" upper="588" language="@@" identifier="InformProceed">
+    <SceneTurn lower="509" upper="588" speaker="web">
+      <SceneUttr lower="515" upper="588" punct=".">
+        <ActionObject lower="515" upper="522" actor="" name="PROCEED">
+          <ActionFeature lower="523" upper="586" key="value" val="'Please press the proceed button to go to the next step.'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="590" upper="644" language="@@" identifier="InformNewForm">
+    <SceneTurn lower="613" upper="644" speaker="web">
+      <SceneUttr lower="619" upper="644" punct=".">
+        <ActionObject lower="619" upper="625" actor="" name="INFORM">
+          <ActionFeature lower="626" upper="642" key="value" val="'Reaction'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="646" upper="726" language="@@" identifier="InformWelcome">
+    <SceneTurn lower="669" upper="726" speaker="web">
+      <SceneUttr lower="675" upper="726" punct=".">
+        <ActionObject lower="675" upper="681" actor="" name="INFORM">
+          <ActionFeature lower="682" upper="724" key="value" val="'The Welcome Phase has been started'"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="728" upper="864" language="en" identifier="encourage">
+    <SceneTurn lower="747" upper="864" speaker="Mika">
+      <SceneUttr lower="753" upper="775" punct=".">
+        <SceneWord lower="753" upper="756" text="You"/>
+        <SceneWord lower="757" upper="760" text="are"/>
+        <SceneWord lower="761" upper="766" text="doing"/>
+        <SceneWord lower="767" upper="774" text="amazing"/>
+      </SceneUttr>
+      <SceneUttr lower="776" upper="794" punct=".">
+        <SceneWord lower="776" upper="777" text="I"/>
+        <SceneWord lower="778" upper="780" text="am"/>
+        <SceneWord lower="781" upper="786" text="proud"/>
+        <SceneWord lower="787" upper="789" text="of"/>
+        <SceneWord lower="790" upper="793" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="795" upper="828" punct=",">
+        <SceneWord lower="795" upper="799" text="Take"/>
+        <SceneWord lower="800" upper="801" text="a"/>
+        <SceneWord lower="802" upper="808" text="second"/>
+        <SceneWord lower="809" upper="811" text="to"/>
+        <SceneWord lower="812" upper="822" text="appreciate"/>
+        <SceneWord lower="823" upper="827" text="that"/>
+      </SceneUttr>
+      <SceneUttr lower="829" upper="864" punct=".">
+        <SceneWord lower="829" upper="836" text="because"/>
+        <SceneWord lower="837" upper="838" text="I"/>
+        <SceneWord lower="839" upper="849" text="definitely"/>
+        <ActionObject lower="851" upper="859" actor="" name="applause">
+        </ActionObject>
+        <SceneWord lower="861" upper="863" text="am"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="866" upper="984" language="en" identifier="motivate">
+    <SceneTurn lower="884" upper="984" speaker="Mika">
+      <SceneUttr lower="890" upper="936" punct=".">
+        <SceneWord lower="890" upper="895" text="Small"/>
+        <ActionObject lower="897" upper="905" actor="" name="emphasis">
+        </ActionObject>
+        <SceneWord lower="907" upper="915" text="progress"/>
+        <SceneWord lower="916" upper="921" text="still"/>
+        <SceneWord lower="922" upper="924" text="as"/>
+        <SceneWord lower="925" upper="926" text="a"/>
+        <SceneWord lower="927" upper="935" text="progress"/>
+      </SceneUttr>
+      <SceneUttr lower="937" upper="984" punct=".">
+        <SceneWord lower="937" upper="941" text="Keep"/>
+        <SceneWord lower="942" upper="947" text="going"/>
+        <SceneWord lower="948" upper="951" text="and"/>
+        <SceneWord lower="952" upper="954" text="in"/>
+        <SceneWord lower="955" upper="957" text="no"/>
+        <SceneWord lower="958" upper="962" text="time"/>
+        <SceneWord lower="963" upper="966" text="you"/>
+        <SceneWord lower="967" upper="971" text="will"/>
+        <SceneWord lower="972" upper="978" text="finish"/>
+        <SceneWord lower="979" upper="983" text="this"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="986" upper="1098" language="en" identifier="motivate2">
+    <SceneTurn lower="1005" upper="1098" speaker="Mika">
+      <SceneUttr lower="1011" upper="1051" punct=".">
+        <SceneWord lower="1011" upper="1015" text="Take"/>
+        <ActionObject lower="1017" upper="1035" actor="" name="emphasiswholething">
+        </ActionObject>
+        <SceneWord lower="1037" upper="1038" text="a"/>
+        <SceneWord lower="1039" upper="1043" text="deep"/>
+        <SceneWord lower="1044" upper="1050" text="breath"/>
+      </SceneUttr>
+      <SceneUttr lower="1052" upper="1098" punct=".">
+        <SceneWord lower="1052" upper="1055" text="You"/>
+        <ActionObject lower="1057" upper="1061" actor="" name="sigh">
+        </ActionObject>
+        <SceneWord lower="1063" upper="1067" text="have"/>
+        <SceneWord lower="1068" upper="1071" text="got"/>
+        <SceneWord lower="1072" upper="1075" text="the"/>
+        <SceneWord lower="1076" upper="1082" text="skills"/>
+        <SceneWord lower="1083" upper="1085" text="to"/>
+        <SceneWord lower="1086" upper="1092" text="handle"/>
+        <SceneWord lower="1093" upper="1097" text="this"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1100" upper="1193" language="en" identifier="motivate3">
+    <SceneTurn lower="1119" upper="1193" speaker="Mika">
+      <SceneUttr lower="1125" upper="1150" punct=".">
+        <SceneWord lower="1125" upper="1126" text="I"/>
+        <ActionObject lower="1128" upper="1133" actor="" name="smile">
+        </ActionObject>
+        <SceneWord lower="1135" upper="1142" text="believe"/>
+        <SceneWord lower="1143" upper="1145" text="in"/>
+        <SceneWord lower="1146" upper="1149" text="you"/>
+      </SceneUttr>
+      <SceneUttr lower="1151" upper="1183" punct=",">
+        <SceneWord lower="1151" upper="1155" text="Lets"/>
+        <SceneWord lower="1156" upper="1159" text="try"/>
+        <SceneWord lower="1160" upper="1163" text="one"/>
+        <SceneWord lower="1164" upper="1168" text="more"/>
+        <SceneWord lower="1169" upper="1173" text="time"/>
+        <SceneWord lower="1174" upper="1182" text="together"/>
+      </SceneUttr>
+      <SceneUttr lower="1184" upper="1193" punct="?">
+        <SceneWord lower="1184" upper="1189" text="shall"/>
+        <SceneWord lower="1190" upper="1192" text="we"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1195" upper="1282" language="en" identifier="motivate4">
+    <SceneTurn lower="1214" upper="1282" speaker="Mika">
+      <SceneUttr lower="1220" upper="1247" punct=".">
+        <SceneWord lower="1220" upper="1223" text="You"/>
+        <SceneWord lower="1224" upper="1228" text="have"/>
+        <SceneWord lower="1229" upper="1233" text="been"/>
+        <SceneWord lower="1234" upper="1241" text="working"/>
+        <SceneWord lower="1242" upper="1246" text="hard"/>
+      </SceneUttr>
+      <SceneUttr lower="1248" upper="1282" punct="?">
+        <SceneWord lower="1248" upper="1253" text="Maybe"/>
+        <SceneWord lower="1254" upper="1258" text="take"/>
+        <SceneWord lower="1259" upper="1260" text="a"/>
+        <SceneWord lower="1261" upper="1266" text="short"/>
+        <SceneWord lower="1267" upper="1268" text="2"/>
+        <SceneWord lower="1269" upper="1275" text="minute"/>
+        <SceneWord lower="1276" upper="1281" text="break"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1284" upper="1313" language="@@" identifier="smile">
+    <SceneTurn lower="1299" upper="1313" speaker="Mika">
+      <SceneUttr lower="1306" upper="1313" punct=".">
+        <ActionObject lower="1306" upper="1311" actor="" name="smile">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1315" upper="1371" language="@@" identifier="look">
+    <SceneTurn lower="1329" upper="1371" speaker="Mika">
+      <SceneUttr lower="1336" upper="1371" punct=".">
+        <ActionObject lower="1336" upper="1351" actor="" name="lookatdirection">
+          <ActionFeature lower="1352" upper="1360" key="clockX" val="5"/>
+          <ActionFeature lower="1361" upper="1369" key="clockY" val="1"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1373" upper="1410" language="@@" identifier="fidgeting">
+    <SceneTurn lower="1392" upper="1410" speaker="Mika">
+      <SceneUttr lower="1399" upper="1410" punct=".">
+        <ActionObject lower="1399" upper="1408" actor="" name="foldhands">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1412" upper="1475" language="en" identifier="help">
+    <SceneTurn lower="1426" upper="1475" speaker="Mika">
+      <SceneUttr lower="1432" upper="1475" punct=".">
+        <SceneWord lower="1432" upper="1436" text="Wish"/>
+        <ActionObject lower="1438" upper="1442" actor="" name="sigh">
+        </ActionObject>
+        <SceneWord lower="1444" upper="1445" text="I"/>
+        <SceneWord lower="1446" upper="1451" text="could"/>
+        <SceneWord lower="1452" upper="1454" text="be"/>
+        <SceneWord lower="1455" upper="1457" text="of"/>
+        <SceneWord lower="1458" upper="1462" text="some"/>
+        <SceneWord lower="1463" upper="1467" text="help"/>
+        <SceneWord lower="1468" upper="1470" text="to"/>
+        <SceneWord lower="1471" upper="1474" text="you"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1477" upper="1514" language="@@" identifier="surprised">
+    <SceneTurn lower="1496" upper="1514" speaker="Mika">
+      <SceneUttr lower="1503" upper="1514" punct=".">
+        <ActionObject lower="1503" upper="1512" actor="" name="surprised">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1516" upper="1608" language="@@" identifier="cheer">
+    <SceneTurn lower="1531" upper="1608" speaker="Mika">
+      <SceneUttr lower="1537" upper="1608" punct=".">
+        <SceneAbbrev lower="1537" upper="1542" first="Don" second="t"/>
+        <ActionObject lower="1544" upper="1554" actor="" name="supportive">
+        </ActionObject>
+        <SceneWord lower="1556" upper="1562" text="stress"/>
+        <SceneWord lower="1563" upper="1566" text="too"/>
+        <SceneWord lower="1567" upper="1571" text="much"/>
+        <SceneWord lower="1572" upper="1575" text="you"/>
+        <SceneWord lower="1576" upper="1579" text="can"/>
+        <SceneWord lower="1580" upper="1586" text="surely"/>
+        <SceneWord lower="1587" upper="1593" text="finish"/>
+        <SceneWord lower="1594" upper="1596" text="it"/>
+        <SceneWord lower="1597" upper="1599" text="in"/>
+        <SceneWord lower="1600" upper="1602" text="no"/>
+        <SceneWord lower="1603" upper="1607" text="time"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1610" upper="1660" language="@@" identifier="DefaultV1">
+    <SceneTurn lower="1629" upper="1660" speaker="Mika">
+      <SceneUttr lower="1636" upper="1660" punct=".">
+        <ActionObject lower="1636" upper="1650" actor="" name="pointdownright">
+        </ActionObject>
+        <ActionObject lower="1653" upper="1658" actor="" name="think">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1662" upper="1704" language="@@" identifier="pointdown">
+    <SceneTurn lower="1681" upper="1704" speaker="Mika">
+      <SceneUttr lower="1688" upper="1704" punct=".">
+        <ActionObject lower="1688" upper="1702" actor="" name="pointdownright">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1706" upper="1751" language="@@" identifier="Default_Void">
+    <SceneTurn lower="1728" upper="1751" speaker="Mika">
+      <SceneUttr lower="1735" upper="1751" punct=".">
+        <ActionObject lower="1735" upper="1749" actor="" name="pointdownright">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1753" upper="1798" language="@@" identifier="sit_table_chin">
+    <SceneTurn lower="1777" upper="1798" speaker="Mika">
+      <SceneUttr lower="1784" upper="1798" punct=".">
+        <ActionObject lower="1784" upper="1796" actor="" name="sittablechin">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1800" upper="1849" language="@@" identifier="look_screen_down">
+    <SceneTurn lower="1826" upper="1849" speaker="Mika">
+      <SceneUttr lower="1833" upper="1849" punct=".">
+        <ActionObject lower="1833" upper="1847" actor="" name="pointdownright">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1851" upper="1903" language="@@" identifier="look_screen_middle">
+    <SceneTurn lower="1879" upper="1903" speaker="Mika">
+      <SceneUttr lower="1886" upper="1903" punct=".">
+        <ActionObject lower="1886" upper="1901" actor="" name="pointdownmiddle">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1905" upper="1940" language="@@" identifier="lookDown">
+    <SceneTurn lower="1923" upper="1940" speaker="Mika">
+      <SceneUttr lower="1930" upper="1940" punct=".">
+        <ActionObject lower="1930" upper="1938" actor="" name="lookdown">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1942" upper="1981" language="@@" identifier="DefaultF1">
+    <SceneTurn lower="1961" upper="1981" speaker="Mika">
+      <SceneUttr lower="1968" upper="1981" punct=".">
+        <ActionObject lower="1968" upper="1979" actor="" name="handontable">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="1983" upper="2026" language="@@" identifier="DefaultF2">
+    <SceneTurn lower="2002" upper="2026" speaker="Mika">
+      <SceneUttr lower="2009" upper="2026" punct=".">
+        <ActionObject lower="2009" upper="2024" actor="" name="pointdownmiddle">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2028" upper="2071" language="@@" identifier="DefaultF3">
+    <SceneTurn lower="2047" upper="2071" speaker="Mika">
+      <SceneUttr lower="2054" upper="2071" punct=".">
+        <ActionObject lower="2054" upper="2069" actor="" name="pointdownmiddle">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2073" upper="2137" language="@@" identifier="lookAtCamera">
+    <SceneTurn lower="2095" upper="2137" speaker="Mika">
+      <SceneUttr lower="2102" upper="2137" punct=".">
+        <ActionObject lower="2102" upper="2117" actor="" name="lookatdirection">
+          <ActionFeature lower="2118" upper="2126" key="clockX" val="5"/>
+          <ActionFeature lower="2127" upper="2135" key="clockY" val="1"/>
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2139" upper="2185" language="@@" identifier="lookDown">
+    <SceneTurn lower="2157" upper="2185" speaker="Mika">
+      <SceneUttr lower="2164" upper="2185" punct=".">
+        <ActionObject lower="2164" upper="2183" actor="" name="LookLeftDownCommand">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2187" upper="2226" language="@@" identifier="lookAtDown">
+    <SceneTurn lower="2207" upper="2226" speaker="Mika">
+      <SceneUttr lower="2214" upper="2226" punct=".">
+        <ActionObject lower="2214" upper="2224" actor="" name="lookatdown">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2228" upper="2257" language="@@" identifier="bored">
+    <SceneTurn lower="2243" upper="2257" speaker="Mika">
+      <SceneUttr lower="2250" upper="2257" punct=".">
+        <ActionObject lower="2250" upper="2255" actor="" name="bored">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2259" upper="2356" language="en" identifier="breath">
+    <SceneTurn lower="2275" upper="2356" speaker="Mika">
+      <SceneUttr lower="2281" upper="2321" punct=".">
+        <SceneWord lower="2281" upper="2285" text="Lets"/>
+        <ActionObject lower="2287" upper="2305" actor="" name="emphasiswholething">
+        </ActionObject>
+        <SceneWord lower="2307" upper="2311" text="take"/>
+        <SceneWord lower="2312" upper="2313" text="a"/>
+        <SceneWord lower="2314" upper="2320" text="breath"/>
+      </SceneUttr>
+      <SceneUttr lower="2322" upper="2356" punct=".">
+        <SceneWord lower="2322" upper="2326" text="Then"/>
+        <SceneWord lower="2327" upper="2329" text="we"/>
+        <SceneWord lower="2330" upper="2333" text="can"/>
+        <SceneWord lower="2334" upper="2338" text="dive"/>
+        <SceneWord lower="2339" upper="2343" text="back"/>
+        <SceneWord lower="2344" upper="2346" text="in"/>
+        <SceneWord lower="2347" upper="2355" text="stronger"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2358" upper="2385" language="@@" identifier="sigh">
+    <SceneTurn lower="2372" upper="2385" speaker="Mika">
+      <SceneUttr lower="2379" upper="2385" punct=".">
+        <ActionObject lower="2379" upper="2383" actor="" name="sigh">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2387" upper="2426" language="@@" identifier="screenShow">
+    <SceneTurn lower="2407" upper="2426" speaker="Mika">
+      <SceneUttr lower="2414" upper="2426" punct=".">
+        <ActionObject lower="2414" upper="2424" actor="" name="screenshow">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2428" upper="2475" language="@@" identifier="lookScreenLeft">
+    <SceneTurn lower="2452" upper="2475" speaker="Mika">
+      <SceneUttr lower="2459" upper="2475" punct=".">
+        <ActionObject lower="2459" upper="2473" actor="" name="lookscreenleft">
+        </ActionObject>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2477" upper="2512" language="@@" identifier="SceneName">
+    <SceneTurn lower="2496" upper="2512" speaker="character">
+      <SceneUttr lower="2507" upper="2512" punct=".">
+        <SceneWord lower="2507" upper="2511" text="Text"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2514" upper="2682" language="en" identifier="encourageWord">
+    <SceneTurn lower="2537" upper="2682" speaker="Mika">
+      <SceneUttr lower="2543" upper="2566" punct=",">
+        <SceneWord lower="2543" upper="2547" text="This"/>
+        <SceneWord lower="2548" upper="2553" text="stuff"/>
+        <SceneWord lower="2554" upper="2556" text="is"/>
+        <SceneWord lower="2557" upper="2560" text="not"/>
+        <SceneWord lower="2561" upper="2565" text="easy"/>
+      </SceneUttr>
+      <SceneUttr lower="2567" upper="2594" punct=",">
+        <SceneWord lower="2567" upper="2569" text="so"/>
+        <SceneWord lower="2570" upper="2572" text="if"/>
+        <SceneWord lower="2573" upper="2575" text="it"/>
+        <SceneWord lower="2576" upper="2581" text="feels"/>
+        <SceneWord lower="2582" upper="2593" text="frustrating"/>
+      </SceneUttr>
+      <SceneUttr lower="2595" upper="2612" punct=".">
+        <SceneWord lower="2595" upper="2599" text="that"/>
+        <SceneWord lower="2600" upper="2605" text="makes"/>
+        <SceneWord lower="2606" upper="2611" text="sense"/>
+      </SceneUttr>
+      <SceneUttr lower="2613" upper="2682" punct=".">
+        <SceneWord lower="2613" upper="2617" text="Just"/>
+        <SceneWord lower="2618" upper="2624" text="wanted"/>
+        <SceneWord lower="2625" upper="2627" text="to"/>
+        <SceneWord lower="2628" upper="2631" text="say"/>
+        <SceneWord lower="2632" upper="2633" text="I"/>
+        <SceneWord lower="2634" upper="2640" text="really"/>
+        <SceneWord lower="2641" upper="2651" text="appreciate"/>
+        <SceneWord lower="2652" upper="2655" text="the"/>
+        <SceneWord lower="2656" upper="2662" text="effort"/>
+        <SceneWord lower="2663" upper="2666" text="you"/>
+        <SceneWord lower="2667" upper="2670" text="are"/>
+        <SceneWord lower="2671" upper="2678" text="putting"/>
+        <SceneWord lower="2679" upper="2681" text="in"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2684" upper="2807" language="en" identifier="encourageWord2">
+    <SceneTurn lower="2708" upper="2807" speaker="Mika">
+      <SceneUttr lower="2714" upper="2730" punct=".">
+        <SceneWord lower="2714" upper="2718" text="Take"/>
+        <SceneWord lower="2719" upper="2720" text="a"/>
+        <SceneWord lower="2721" upper="2729" text="breather"/>
+      </SceneUttr>
+      <SceneUttr lower="2731" upper="2788" punct=".">
+        <SceneWord lower="2731" upper="2734" text="The"/>
+        <SceneWord lower="2735" upper="2742" text="problem"/>
+        <SceneWord lower="2743" upper="2748" text="looks"/>
+        <SceneWord lower="2749" upper="2753" text="much"/>
+        <SceneWord lower="2754" upper="2761" text="scarier"/>
+        <SceneWord lower="2762" upper="2766" text="when"/>
+        <SceneWord lower="2767" upper="2769" text="we"/>
+        <SceneWord lower="2770" upper="2776" text="forget"/>
+        <SceneWord lower="2777" upper="2779" text="to"/>
+        <SceneWord lower="2780" upper="2787" text="breathe"/>
+      </SceneUttr>
+      <SceneUttr lower="2789" upper="2807" punct=".">
+        <SceneWord lower="2789" upper="2790" text="I"/>
+        <SceneWord lower="2791" upper="2793" text="am"/>
+        <SceneWord lower="2794" upper="2796" text="by"/>
+        <SceneWord lower="2797" upper="2801" text="your"/>
+        <SceneWord lower="2802" upper="2806" text="side"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+  <SceneObject lower="2809" upper="2960" language="en" identifier="encourageWord3">
+    <SceneTurn lower="2833" upper="2960" speaker="Mika">
+      <SceneUttr lower="2839" upper="2871" punct=".">
+        <SceneWord lower="2839" upper="2841" text="It"/>
+        <SceneWord lower="2842" upper="2844" text="is"/>
+        <SceneWord lower="2845" upper="2849" text="okay"/>
+        <SceneWord lower="2850" upper="2852" text="to"/>
+        <SceneWord lower="2853" upper="2857" text="stop"/>
+        <SceneWord lower="2858" upper="2861" text="for"/>
+        <SceneWord lower="2862" upper="2863" text="a"/>
+        <SceneWord lower="2864" upper="2870" text="moment"/>
+      </SceneUttr>
+      <SceneUttr lower="2872" upper="2921" punct=".">
+        <SceneWord lower="2872" upper="2876" text="Take"/>
+        <SceneWord lower="2877" upper="2878" text="a"/>
+        <SceneWord lower="2879" upper="2882" text="few"/>
+        <SceneWord lower="2883" upper="2887" text="deep"/>
+        <SceneWord lower="2888" upper="2895" text="breaths"/>
+        <SceneWord lower="2896" upper="2899" text="and"/>
+        <SceneWord lower="2900" upper="2903" text="let"/>
+        <SceneWord lower="2904" upper="2907" text="the"/>
+        <SceneWord lower="2908" upper="2915" text="tension"/>
+        <SceneWord lower="2916" upper="2920" text="ease"/>
+      </SceneUttr>
+      <SceneUttr lower="2922" upper="2960" punct=".">
+        <SceneWord lower="2922" upper="2923" text="I"/>
+        <SceneWord lower="2924" upper="2926" text="am"/>
+        <SceneWord lower="2927" upper="2931" text="here"/>
+        <SceneWord lower="2932" upper="2935" text="and"/>
+        <SceneWord lower="2936" upper="2938" text="we"/>
+        <SceneWord lower="2939" upper="2943" text="will"/>
+        <SceneWord lower="2944" upper="2950" text="figure"/>
+        <SceneWord lower="2951" upper="2955" text="this"/>
+        <SceneWord lower="2956" upper="2959" text="out"/>
+      </SceneUttr>
+    </SceneTurn>
+  </SceneObject>
+</SceneScript>

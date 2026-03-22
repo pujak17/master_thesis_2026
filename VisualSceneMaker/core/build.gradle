@@ -1,0 +1,56 @@
+plugins {
+    id 'java'
+}
+
+group 'de.dfki.vsm'
+
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
+
+if(!project.hasProperty('flavor')){
+    apply plugin: 'java'
+    version "android-4.0.1"
+
+    println("Building jar for ANDROID")
+}
+compileJava{
+   //options.release = 8
+}
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+dependencies {
+    implementation files('../lib/JCup.jar')
+    implementation files('../lib/JFlex.jar')
+    // https://mvnrepository.com/artifact/jpl/jpl
+    implementation group: 'jpl', name: 'jpl', version: '7.4.0'
+    // https://mvnrepository.com/artifact/org.jetbrains/annotations
+    implementation group: 'org.jetbrains', name: 'annotations', version: '17.0.0'
+    // https://mvnrepository.com/artifact/javax.xml.bind/jaxb-api
+    implementation group: 'javax.xml.bind', name: 'jaxb-api', version: '2.4.0-b180830.0359'
+
+}
+
+
+jar {
+    doFirst {
+        project.ext.set('flavor', 'android')
+        project.ext.set('buildInfo', 'android')
+    }
+
+    from {
+        (configurations.runtimeClasspath).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    manifest {
+        attributes(
+                'Main-Class': 'de.dfki.vsm.Core'
+
+        )
+    }
+    duplicatesStrategy = 'exclude'
+}
+

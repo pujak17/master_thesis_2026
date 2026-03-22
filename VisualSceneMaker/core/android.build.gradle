@@ -1,0 +1,42 @@
+plugins {
+    id 'java'
+    id 'net.nemerosa.versioning' version '2.8.2'
+}
+group 'de.dfki.vsm'
+version '4.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url "https://repo.spring.io/libs-release" }
+}
+
+apply plugin: 'java'
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
+
+dependencies {
+    implementation files('../lib/JCup.jar')
+    implementation files('../lib/JFlex.jar')
+    // https://mvnrepository.com/artifact/jpl/jpl
+    implementation group: 'jpl', name: 'jpl', version: '7.4.0'
+    // https://mvnrepository.com/artifact/org.jetbrains/annotations
+    implementation group: 'org.jetbrains', name: 'annotations', version: '17.0.0'
+}
+
+
+jar {
+    from {
+        (configurations.runtime).collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    }
+    manifest {
+        attributes(
+                'Main-Class': 'de.dfki.vsm.Core',
+                'build' : versioning.info.build,
+                'Build-Revision': versioning.info.commit
+        )
+    }
+    duplicatesStrategy = 'exclude'
+}
+

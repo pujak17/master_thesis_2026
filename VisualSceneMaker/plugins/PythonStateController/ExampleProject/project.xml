@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Project name="TestPythonState">
+  <Plugins><Plugin type="device" name="pythonState" class="de.dfki.vsm.xtension.PythonState.PythonStateExecutor" load="true">
+    <Feature key="pythonBin" val="/Users/puja/miniconda3/envs/yolo/bin/python"/>
+    <Feature key="scriptPath" val="/Users/puja/IdeaProjects/charamelFaceDetection/training/yolo/inference_cls_det.py"/>
+    <Feature key="pythonMode" val="launch"/>
+    <Feature key="python_connected_var" val="python_connected"/>
+    <Feature key="sceneflowStateVar" val="python_state"/>
+  </Plugin>
+
+  </Plugins>
+  <Agents>
+    <Agent name="state" device="pythonState">
+    </Agent>
+  </Agents>
+  <Player>
+  </Player>
+</Project>
